@@ -444,6 +444,19 @@ function render() {
     link.target = "_blank";
     link.rel = "noopener noreferrer";
 
+    // Track individual invitation clicks in Google Analytics
+    link.addEventListener("click", () => {
+      if (typeof window.gtag !== "function") return;
+
+      window.gtag("event", "select_invitation", {
+        invitation_name: product.name,
+        invitation_category: product.category,
+        etsy_listing_id: etsyListingIds[product.name] || "",
+        link_url: product.url || shop,
+        source_section: "invitation_gallery"
+      });
+    });
+
     const hasDirectLink =
       Boolean(product.url && product.url !== shop);
 
