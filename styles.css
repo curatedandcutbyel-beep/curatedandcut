@@ -137,3 +137,23 @@ frame{background:#fff;padding:13px;box-shadow:0 20px 60px #51433c25}.hero-photo{
     font-size: clamp(36px, 7vw, 54px);
   }
 }
+
+/* Standalone party games — editorial styling shared with the other collections */
+.party-games-collection {
+  border-top: 1px solid var(--line);
+}
+.party-games-collection .section-heading p {
+  max-width: 350px;
+}
+.party-games-products {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 760px) {
+  .party-games-products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .party-games-collection .section-heading h2 {
+    font-size: clamp(36px, 7vw, 54px);
+  }
+}
