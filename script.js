@@ -149,7 +149,7 @@ const products = [
   },
   {
     name: "Pink Mandala Birthday",
-    sub: "Pink tile-inspired 12th birthday invite for a stylish tween celebration.",
+    sub: "Pink mandala birthday invitation with an elegant tile-inspired design for any age.",
     category: "kids",
     image: "pink-tile-12th-birthday-invitation.png"
   },
@@ -242,13 +242,13 @@ const products = [
   },
   {
     name: "Dinosaur Dig",
-    sub: "Dinosaur dig birthday party bundle with matching invitation and favours.",
+    sub: "Dinosaur dig birthday bundle with matching invitation and thank-you tag.",
     category: "kids",
     image: "dinosaur-dig-birthday-invitation-party-favors.png"
   },
   {
     name: "Enchanted Fairy Garden",
-    sub: "Fairy garden birthday party bundle with matching invitation and favours.",
+    sub: "Fairy garden birthday bundle with matching invitation and thank-you tag.",
     category: "kids",
     image: "fairy-garden-birthday-invitation-party-favors.png"
   },
@@ -296,7 +296,7 @@ const products = [
   },
   {
     name: "Race Car Birthday",
-    sub: "Vintage race car birthday party bundle with matching invitation and favours.",
+    sub: "Vintage race car birthday bundle with matching invitation and thank-you tag.",
     category: "kids",
     image: "race-car-birthday-invitation-party-favors.png"
   },
@@ -338,7 +338,7 @@ const products = [
   },
   {
     name: "Wine Tasting Birthday",
-    sub: "Wine tasting birthday party bundle for a stylish celebration with friends.",
+    sub: "Wine tasting birthday bundle with matching invitation and wine tasting scorecard.",
     category: "adult",
     image: "wine-tasting-birthday-invitation.png"
   },
