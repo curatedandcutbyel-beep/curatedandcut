@@ -583,27 +583,18 @@ if (toggle && nav) {
 
 
 /* ==========================================
-   SHOP BY COLLECTION DROPDOWN
+   SHOP BY COLLECTION LINKS
 ========================================== */
 
-const collectionSelect = document.getElementById("shop-collection-select");
-
-if (collectionSelect) {
-  collectionSelect.addEventListener("change", () => {
-    const destination = collectionSelect.value;
-
-    if (destination === "birthdays" || destination === "bundles") {
-      const filterValue = destination === "bundles" ? "bundles" : "all";
-      document.querySelector(`.filter[data-filter="${filterValue}"]`)?.click();
-      document.getElementById("collection")?.scrollIntoView({ behavior: "smooth", block: "start" });
-    } else if (destination === "party-games" || destination === "christmas") {
-      document.getElementById(destination)?.scrollIntoView({ behavior: "smooth", block: "start" });
+document.querySelectorAll(".collection-shortcuts a[data-collection]").forEach(link => {
+  link.addEventListener("click", () => {
+    const collection = link.dataset.collection;
+    if (collection === "birthdays" || collection === "bundles") {
+      const filter = collection === "bundles" ? "bundles" : "all";
+      document.querySelector(`.filter[data-filter="${filter}"]`)?.click();
     }
-
-    // Reset so shoppers can select the same destination again later.
-    collectionSelect.value = "";
   });
-}
+});
 
 /* ==========================================
    FOOTER YEAR
