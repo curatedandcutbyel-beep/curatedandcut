@@ -101,3 +101,19 @@ frame{background:#fff;padding:13px;box-shadow:0 20px 60px #51433c25}.hero-photo{
   }
 }
 
+
+/* Clear Etsy destination on invitation cards */
+.product-details > .product-etsy-cta {
+  flex-shrink: 0;
+  align-self: flex-start;
+  padding-top: 4px;
+  font: 600 11px/1.4 "DM Sans", sans-serif;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  border-bottom: 1px solid #a59a91;
+  padding-bottom: 4px;
+}
+@media (max-width: 760px) {
+  .product-details { flex-wrap: wrap; }
+  .product-details > .product-etsy-cta { margin-top: 2px; }
+}
