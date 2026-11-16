@@ -117,3 +117,23 @@ frame{background:#fff;padding:13px;box-shadow:0 20px 60px #51433c25}.hero-photo{
   .product-details { flex-wrap: wrap; }
   .product-details > .product-etsy-cta { margin-top: 2px; }
 }
+
+/* Christmas collection — matches the editorial invitation gallery */
+.christmas-collection {
+  border-top: 1px solid var(--line);
+}
+.christmas-collection .section-heading p {
+  max-width: 350px;
+}
+.christmas-products {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 760px) {
+  .christmas-products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .christmas-collection .section-heading h2 {
+    font-size: clamp(36px, 7vw, 54px);
+  }
+}
