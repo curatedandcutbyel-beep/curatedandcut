@@ -504,7 +504,8 @@ function render() {
 
     const arrow = document.createElement("span");
     arrow.setAttribute("aria-hidden", "true");
-    arrow.textContent = "↗";
+    arrow.className = "product-etsy-cta";
+    arrow.textContent = "View on Etsy ↗";
 
     details.append(info, arrow);
 
