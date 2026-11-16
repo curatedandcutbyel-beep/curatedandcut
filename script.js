@@ -592,6 +592,84 @@ if (year) {
 }
 
 
+
+/* ==========================================
+   PARTY GAMES COLLECTION
+   Add future printable games here.
+========================================== */
+
+const partyGamesProducts = [
+  {
+    name: "Birthday Pub Golf Game Kit",
+    sub: "Printable birthday pub golf game kit with scorecards, rules and penalty sheets.",
+    image: "birthday-pub-golf-printable-game-bundle.png",
+    url: "https://curatedandcutbyel.etsy.com/au/listing/4598986783/pub-golf-scorecard-party-game-kit",
+    listingId: "4598986783"
+  }
+];
+
+function renderPartyGames() {
+  const gamesGrid = document.getElementById("party-games-products");
+  if (!gamesGrid) return;
+  gamesGrid.replaceChildren();
+
+  partyGamesProducts.forEach(product => {
+    const article = document.createElement("article");
+    article.className = "product";
+
+    const link = document.createElement("a");
+    link.href = product.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.setAttribute("aria-label", `View ${product.name} on Etsy`);
+
+    link.addEventListener("click", () => {
+      if (typeof window.gtag !== "function") return;
+      window.gtag("event", "select_party_game", {
+        product_name: product.name,
+        etsy_listing_id: product.listingId,
+        link_url: product.url,
+        source_section: "party_games_collection"
+      });
+    });
+
+    const imageBox = document.createElement("div");
+    imageBox.className = "product-image";
+    const img = document.createElement("img");
+    img.src = `assets/${product.image}`;
+    img.alt = product.sub;
+    img.loading = "lazy";
+    const missing = document.createElement("span");
+    missing.className = "product-placeholder";
+    missing.textContent = "Image unavailable";
+    img.onerror = () => {
+      img.hidden = true;
+      imageBox.classList.add("no-image");
+    };
+    imageBox.append(img, missing);
+
+    const details = document.createElement("div");
+    details.className = "product-details";
+    const info = document.createElement("div");
+    const title = document.createElement("h3");
+    title.textContent = product.name;
+    const subtitle = document.createElement("p");
+    subtitle.textContent = product.sub;
+    info.append(title, subtitle);
+
+    const cta = document.createElement("span");
+    cta.className = "product-etsy-cta";
+    cta.setAttribute("aria-hidden", "true");
+    cta.textContent = "View on Etsy ↗";
+    details.append(info, cta);
+    link.append(imageBox, details);
+    article.append(link);
+    gamesGrid.append(article);
+  });
+}
+
+renderPartyGames();
+
 /* ==========================================
    CHRISTMAS COLLECTION
    Add future Christmas products here.
