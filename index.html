@@ -34,7 +34,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
 <!-- WEBSITE STYLES -->
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=20261117-collection-links">
 
 <!-- GOOGLE ANALYTICS -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0NYW1TGPQN"></script>
@@ -167,19 +167,15 @@ gtag('config', 'G-0NYW1TGPQN');
 <!-- SHOP BY COLLECTION -->
 <section class="shop-by-collection" aria-labelledby="shop-by-collection-heading">
   <div class="shop-by-collection-copy">
-    <span class="eyebrow">FIND SOMETHING LOVELY</span>
+    <span class="eyebrow">EXPLORE CURATED &amp; CUT</span>
     <h2 id="shop-by-collection-heading">Shop by <em>collection.</em></h2>
   </div>
-  <div class="shop-by-collection-control">
-    <label for="shop-collection-select">Explore our collections</label>
-    <select id="shop-collection-select" aria-label="Choose a product collection">
-      <option value="" selected disabled>Select a collection</option>
-      <option value="birthdays">Birthday Invitations</option>
-      <option value="bundles">Party Bundles</option>
-      <option value="party-games">Party Games</option>
-      <option value="christmas">Christmas Printables</option>
-    </select>
-  </div>
+  <nav class="collection-shortcuts" aria-label="Shop by collection">
+    <a href="#collection" data-collection="birthdays">Birthday invitations <span aria-hidden="true">↗</span></a>
+    <a href="#collection" data-collection="bundles">Party bundles <span aria-hidden="true">↗</span></a>
+    <a href="#party-games" data-collection="party-games">Party games <span aria-hidden="true">↗</span></a>
+    <a href="#christmas" data-collection="christmas">Christmas printables <span aria-hidden="true">↗</span></a>
+  </nav>
 </section>
 
 <!-- INVITATION COLLECTION -->
@@ -491,7 +487,7 @@ gtag('config', 'G-0NYW1TGPQN');
 </footer>
 
 <!-- WEBSITE JAVASCRIPT -->
-<script src="script.js?v=20261117-shop-collections-v2" defer></script>
+<script src="script.js?v=20261117-collection-links" defer></script>
 
 </body>
 </html>
