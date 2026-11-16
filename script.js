@@ -605,6 +605,13 @@ const partyGamesProducts = [
     image: "birthday-pub-golf-printable-game-bundle.png",
     url: "https://curatedandcutbyel.etsy.com/au/listing/4598986783/pub-golf-scorecard-party-game-kit",
     listingId: "4598986783"
+  },
+  {
+    name: "Pink Birthday Pub Golf Game Kit",
+    sub: "Pink pub golf birthday game kit with printable scorecards, rules and penalty sheets.",
+    image: "pink-birthday-pub-golf-printable-game-bundle.png",
+    url: "https://curatedandcutbyel.etsy.com/au/listing/4598445179/pub-golf-scorecard-party-kit-editable",
+    listingId: "4598445179"
   }
 ];
 
