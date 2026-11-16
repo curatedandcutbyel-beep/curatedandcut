@@ -71,139 +71,139 @@ const products = [
 
   {
     name: "Bouquet Bar",
-    sub: "Flower arranging birthday invitation",
+    sub: "Editable flower arranging birthday invite for a stylish bouquet-making celebration.",
     category: "adult",
     image: "bouquet-bar-birthday-invitation.png"
   },
   {
     name: "The Charm Club",
-    sub: "Charm bracelet birthday invitation",
+    sub: "Charm bracelet making birthday invite for a creative jewellery party.",
     category: "kids",
     image: "charm-bracelet-birthday-invitation.png"
   },
   {
     name: "Cowgirl Jessie",
-    sub: "Cowgirl birthday invitation",
+    sub: "Playful cowgirl birthday invite for a western-inspired kids party.",
     category: "kids",
     image: "cowgirl-jessie-birthday-invitation.png"
   },
   {
     name: "Talk Thirty to Me",
-    sub: "Martini 30th birthday invitation",
+    sub: "Martini-inspired 30th birthday invite for a chic milestone celebration.",
     category: "adult",
     image: "dirty-thirty-martini-birthday-invitation.png"
   },
   {
     name: "Jellycat Cake",
-    sub: "Cake themed birthday invitation",
+    sub: "Cute cake-themed birthday invite for a playful kids celebration.",
     category: "kids",
     image: "jellycat-cake-birthday-invitation.png"
   },
   {
     name: "Masquerade",
-    sub: "Masquerade birthday party invitation",
+    sub: "Elegant masquerade birthday invite for a glamorous masked party.",
     category: "adult",
     image: "masquerade-birthday-party-invitation.png"
   },
   {
     name: "Matcha Club",
-    sub: "Matcha birthday invitation",
+    sub: "Modern matcha-themed birthday invite for a cute café-style celebration.",
     category: "adult",
     image: "matcha-club-birthday-invitation.png"
   },
   {
     name: "Mermaid Birthday",
-    sub: "Mermaid birthday invitation",
+    sub: "Whimsical mermaid birthday invite for an under-the-sea kids party.",
     category: "kids",
     image: "mermaid-birthday-invitation.png"
   },
   {
     name: "Pasta Club",
-    sub: "Pasta themed birthday invitation",
+    sub: "Italian pasta-themed birthday invite for a fun dinner celebration.",
     category: "adult",
     image: "pasta-club-birthday-invitation.png"
   },
   {
     name: "Peppa Pig Birthday",
-    sub: "Peppa Pig birthday invitation",
+    sub: "Colourful Peppa Pig birthday invite for a cheerful kids party.",
     category: "kids",
     image: "peppa-pig-birthday-invitation.png"
   },
   {
     name: "Peppa Pig Rainbow",
-    sub: "Rainbow birthday invitation",
+    sub: "Rainbow Peppa Pig birthday invite for a bright, playful celebration.",
     category: "kids",
     image: "peppa-pig-rainbow-birthday-invitation.png"
   },
   {
     name: "Pink Carnival",
-    sub: "Carnival ticket birthday invitation",
+    sub: "Pink carnival ticket birthday invite for a fun fairground-themed party.",
     category: "kids",
     image: "pink-carnival-ticket-birthday-invitation.png"
   },
   {
     name: "Scorpio Season — Pink",
-    sub: "Pink zodiac birthday invitation",
+    sub: "Pink Scorpio zodiac birthday invite for a star-sign celebration.",
     category: "adult",
     image: "pink-scorpio-birthday-invitation.png"
   },
   {
     name: "Pink Mandala Birthday",
-    sub: "Pink mandala 12th birthday invitation",
+    sub: "Pink tile-inspired 12th birthday invite for a stylish tween celebration.",
     category: "kids",
     image: "pink-tile-12th-birthday-invitation.png"
   },
   {
     name: "The Pottery Club",
-    sub: "Pottery painting birthday invitation",
+    sub: "Pottery painting birthday invite for a creative paint-and-sip celebration.",
     category: "adult",
     image: "pottery-painting-birthday-invitation.png"
   },
   {
     name: "Retro Palm Tree",
-    sub: "Retro palm tree birthday invitation",
+    sub: "Retro palm tree birthday invite for a laid-back summer celebration.",
     category: "adult",
     image: "retro-palm-tree-birthday-invitation.png"
   },
   {
     name: "Sagittarius Season",
-    sub: "Sagittarius birthday invitation",
+    sub: "Sagittarius zodiac birthday invite for a celestial birthday celebration.",
     category: "adult",
     image: "sagittarius-season-birthday-invitation.png"
   },
   {
     name: "Six Seven",
-    sub: "6–7 themed birthday invitation",
+    sub: "Playful six-seven birthday invite for a trend-inspired kids party.",
     category: "kids",
     image: "six-seven-birthday-invitation.png"
   },
   {
     name: "Sourdough Celebrations",
-    sub: "Sourdough birthday invitation",
+    sub: "Sourdough-themed birthday invite for a cosy baking-inspired celebration.",
     category: "adult",
     image: "sourdough-birthday-invitation.png"
   },
   {
     name: "Toy Story Birthday",
-    sub: "Toy Story birthday invitation",
+    sub: "Toy Story birthday invite for a playful, adventure-filled kids party.",
     category: "kids",
     image: "toy-story-birthday-invitation.png"
   },
   {
     name: "Trading Card Birthday",
-    sub: "Trading card birthday invitation",
+    sub: "Trading card-inspired birthday invite for a fun collector-themed party.",
     category: "kids",
     image: "trading-card-birthday-invitation.png"
   },
   {
     name: "Two Let the Dogs Out",
-    sub: "Dog themed second birthday invitation",
+    sub: "Dog-themed 2nd birthday invite for a playful puppy party.",
     category: "kids",
     image: "two-let-the-dogs-out-birthday-invitation.png"
   },
   {
     name: "Under the Sea",
-    sub: "Under the sea first birthday invitation",
+    sub: "Under-the-sea first birthday invite for a sweet ocean-themed celebration.",
     category: "kids",
     image: "under-the-sea-first-birthday-invitation.png"
   },
@@ -212,139 +212,139 @@ const products = [
 
   {
     name: "Ballerina Birthday",
-    sub: "Ballet birthday invitation",
+    sub: "Ballerina birthday invite for a sweet, ballet-inspired kids party.",
     category: "kids",
     image: "ballerina-birthday-invitation.png"
   },
   {
     name: "Scorpio Season — Black & Gold",
-    sub: "Black and gold Scorpio birthday invitation",
+    sub: "Black and gold Scorpio birthday invite for a bold zodiac celebration.",
     category: "adult",
     image: "black-gold-scorpio-birthday-invitation.png"
   },
   {
     name: "Blue Teddy Bear Picnic",
-    sub: "Blue teddy bear picnic birthday invitation",
+    sub: "Blue teddy bear picnic birthday invite for a sweet little-one celebration.",
     category: "kids",
     image: "blue-teddy-bear-picnic-birthday-invitation.png"
   },
   {
     name: "Burgundy & Blush 18th",
-    sub: "Elegant eighteenth birthday invitation",
+    sub: "Burgundy and blush 18th birthday invite for an elegant milestone party.",
     category: "adult",
     image: "burgundy-blush-18th-birthday-invitation.png"
   },
   {
     name: "Cocktail Party",
-    sub: "Cocktail birthday party invitation",
+    sub: "Stylish cocktail birthday invite for a drinks-and-celebration evening.",
     category: "adult",
     image: "cocktail-party-birthday-invitation.png"
   },
   {
     name: "Dinosaur Dig",
-    sub: "Dinosaur dig birthday invitation and party favours",
+    sub: "Dinosaur dig birthday party bundle with matching invitation and favours.",
     category: "kids",
     image: "dinosaur-dig-birthday-invitation-party-favors.png"
   },
   {
     name: "Enchanted Fairy Garden",
-    sub: "Fairy garden birthday invitation and party favours",
+    sub: "Fairy garden birthday party bundle with matching invitation and favours.",
     category: "kids",
     image: "fairy-garden-birthday-invitation-party-favors.png"
   },
   {
     name: "Groovy Seventh Birthday",
-    sub: "Retro groovy seventh birthday invitation",
+    sub: "Retro groovy 7th birthday invite for a colourful kids celebration.",
     category: "kids",
     image: "groovy-seventh-birthday-invitation.png"
   },
   {
     name: "K-Pop Birthday Party",
-    sub: "K-pop themed birthday invitation",
+    sub: "K-pop birthday invite for a music-loving kids party.",
     category: "kids",
     image: "kpop-birthday-party-invitation.png"
   },
   {
     name: "Martini Birthday",
-    sub: "Martini themed birthday invitation",
+    sub: "Chic martini birthday invite for a stylish cocktail-themed celebration.",
     category: "adult",
     image: "martini-birthday-invitation.png"
   },
   {
     name: "Pink Cowgirl Rodeo",
-    sub: "Pink cowgirl rodeo birthday invitation",
+    sub: "Pink cowgirl rodeo birthday invite for a western-inspired kids party.",
     category: "kids",
     image: "pink-cowgirl-rodeo-birthday-invitation.png"
   },
   {
     name: "Pink Princess Birthday",
-    sub: "Princess themed birthday invitation",
+    sub: "Pink princess birthday invite for a magical royal-themed celebration.",
     category: "kids",
     image: "pink-princess-birthday-invitation.png"
   },
   {
     name: "Pink Teddy Bear Picnic",
-    sub: "Pink teddy bear picnic birthday invitation",
+    sub: "Pink teddy bear picnic birthday invite for a sweet kids celebration.",
     category: "kids",
     image: "pink-teddy-bear-picnic-birthday-invitation.png"
   },
   {
     name: "Pool Party",
-    sub: "Summer pool party birthday invitation",
+    sub: "Summer pool party birthday invite for a splash-filled celebration.",
     category: "kids",
     image: "pool-party-birthday-invitation.png"
   },
   {
     name: "Race Car Birthday",
-    sub: "Vintage racing car birthday invitation and party favours",
+    sub: "Vintage race car birthday party bundle with matching invitation and favours.",
     category: "kids",
     image: "race-car-birthday-invitation-party-favors.png"
   },
   {
     name: "Sonic Birthday",
-    sub: "Sonic themed birthday invitation",
+    sub: "Sonic-inspired birthday invite for a speedy, action-packed kids party.",
     category: "kids",
     image: "sonic-birthday-invitation.png"
   },
   {
     name: "Spa Party",
-    sub: "Pink spa birthday party invitation",
+    sub: "Pink spa birthday invite for a pamper-party celebration.",
     category: "kids",
     image: "spa-party-birthday-invitation.png"
   },
   {
     name: "Strawberry First Birthday",
-    sub: "Strawberry themed first birthday invitation",
+    sub: "Sweet strawberry first birthday invite for a berry-themed celebration.",
     category: "kids",
     image: "strawberry-first-birthday-invitation.png"
   },
   {
     name: "Swan Princess",
-    sub: "Elegant swan princess birthday invitation",
+    sub: "Elegant swan princess birthday invite for a graceful, fairytale-inspired party.",
     category: "kids",
     image: "swan-princess-birthday-invitation.png"
   },
   {
     name: "Two the Moon",
-    sub: "Space themed second birthday invitation",
+    sub: "Space-themed 2nd birthday invite for a little astronaut celebration.",
     category: "kids",
     image: "two-the-moon-birthday-invitation.png"
   },
   {
     name: "Vintage Circus",
-    sub: "Vintage circus birthday invitation",
+    sub: "Vintage circus birthday invite for a nostalgic carnival-inspired party.",
     category: "kids",
     image: "vintage-circus-birthday-invitation.png"
   },
   {
     name: "Wine Tasting Birthday",
-    sub: "Wine tasting birthday invitation",
+    sub: "Wine tasting birthday party bundle for a stylish celebration with friends.",
     category: "adult",
     image: "wine-tasting-birthday-invitation.png"
   },
   {
     name: "Winnie the Pooh First Birthday",
-    sub: "Winnie the Pooh first birthday invitation",
+    sub: "Winnie the Pooh first birthday invite for a sweet storybook celebration.",
     category: "kids",
     image: "winnie-the-pooh-first-birthday-invitation.png"
   }
