@@ -581,6 +581,30 @@ if (toggle && nav) {
   });
 }
 
+
+/* ==========================================
+   SHOP BY COLLECTION DROPDOWN
+========================================== */
+
+const collectionSelect = document.getElementById("shop-collection-select");
+
+if (collectionSelect) {
+  collectionSelect.addEventListener("change", () => {
+    const destination = collectionSelect.value;
+
+    if (destination === "birthdays" || destination === "bundles") {
+      const filterValue = destination === "bundles" ? "bundles" : "all";
+      document.querySelector(`.filter[data-filter="${filterValue}"]`)?.click();
+      document.getElementById("collection")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else if (destination === "party-games" || destination === "christmas") {
+      document.getElementById(destination)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    // Reset so shoppers can select the same destination again later.
+    collectionSelect.value = "";
+  });
+}
+
 /* ==========================================
    FOOTER YEAR
 ========================================== */
