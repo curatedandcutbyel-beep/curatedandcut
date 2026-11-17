@@ -704,6 +704,13 @@ const christmasProducts = [
     image: "elf-on-the-shelf-christmas-printable-bundle.png",
     url: "https://curatedandcutbyel.etsy.com/au/listing/4616048322/christmas-elf-kit-24-days-printable-elf",
     listingId: "4616048322"
+  },
+  {
+    name: "Christmas Table Stationery Bundle",
+    sub: "Printable Christmas place cards and food labels with festive greenery and red ribbon details.",
+    image: "christmas-place-cards-food-labels-printable-mockup.png",
+    url: "https://curatedandcutbyel.etsy.com/au/listing/4619042556/christmas-table-stationery-bundle",
+    listingId: "4619042556"
   }
 ];
 
