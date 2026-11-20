@@ -14,7 +14,7 @@ const shop = "https://www.etsy.com/shop/curatedandcutbyel";
 const etsyListingIds = {
   "Bouquet Bar": "4602045139",
   "The Charm Club": "4612924489",
-  "Cowgirl Jessie": "4577651944",
+  "Toy Story Cowgirl Jessie Birthday": "4577651944",
   "Talk Thirty to Me": "4612922390",
   "Jellycat Cake": "4594450600",
   "Masquerade": "4601364495",
@@ -59,7 +59,7 @@ const etsyListingIds = {
   "Vintage Circus": "4549387792",
   "Wine Tasting Birthday": "4584255804",
   "Winnie the Pooh First Birthday": "4590192097",
-  "Pink Toy Story 5th Birthday": "4621750154",
+  "Pink Toy Story Birthday": "4621750154",
   "Little Who Turning Two Birthday": "4621711130",
   "Pastel Mermaid Birthday": "4621693188"
 };
@@ -85,8 +85,8 @@ const products = [
     image: "charm-bracelet-birthday-invitation.png"
   },
   {
-    name: "Cowgirl Jessie",
-    sub: "Playful cowgirl birthday invite for a western-inspired kids party.",
+    name: "Toy Story Cowgirl Jessie Birthday",
+    sub: "Toy Story Jessie-inspired cowgirl birthday invitation for a playful western-themed party.",
     category: "kids",
     image: "cowgirl-jessie-birthday-invitation.png"
   },
@@ -352,8 +352,8 @@ const products = [
     image: "winnie-the-pooh-first-birthday-invitation.png"
   },
   {
-    name: "Pink Toy Story 5th Birthday",
-    sub: "Pink western Toy Story-inspired fifth birthday invitation featuring cowgirl and cowboy characters.",
+    name: "Pink Toy Story Birthday",
+    sub: "Pink western Toy Story-inspired birthday invitation featuring cowgirl and cowboy characters for any age.",
     category: "kids",
     image: "pink-toy-story-5th-birthday-invitation.png"
   },
@@ -401,7 +401,7 @@ products.forEach(product => {
 
 // Preserve the shop's direct save-and-share links for the new listings.
 const newInvitationShareLinks = {
-  "Pink Toy Story 5th Birthday": "https://curatedandcutbyel.etsy.com/au/listing/4621750154/pink-toy-story-birthday-invitation",
+  "Pink Toy Story Birthday": "https://curatedandcutbyel.etsy.com/au/listing/4621750154/pink-toy-story-birthday-invitation",
   "Little Who Turning Two Birthday": "https://curatedandcutbyel.etsy.com/au/listing/4621711130/little-who-turning-two-birthday",
   "Pastel Mermaid Birthday": "https://curatedandcutbyel.etsy.com/au/listing/4621693188/mermaid-birthday-invitation-watercolor"
 };
