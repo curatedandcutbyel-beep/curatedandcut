@@ -34,7 +34,7 @@ const etsyListingIds = {
   "Toy Story Birthday": "4585499376",
   "Trading Card Birthday": "4606080182",
   "Two Let the Dogs Out": "4592947935",
-  "Under the Sea": "4543695427",
+  "Under the Sea": "4543693794",
 
   "Ballerina Birthday": "4544262582",
   "Scorpio Season — Black & Gold": "4605356439",
@@ -433,6 +433,11 @@ products.forEach(product => {
   if (additionalInvitationShareLinks[product.name]) {
     product.url = additionalInvitationShareLinks[product.name];
   }
+});
+
+// Correct direct share link for the One-der the Sea invitation.
+products.forEach(product => {
+  if (product.name === "Under the Sea") product.url = "https://curatedandcutbyel.etsy.com/au/listing/4543693794/one-der-the-sea-birthday-invitation";
 });
 
 /* ==========================================
