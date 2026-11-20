@@ -399,6 +399,17 @@ products.forEach(product => {
     : shop;
 });
 
+// Preserve the shop's direct save-and-share links for the new listings.
+const newInvitationShareLinks = {
+  "Pink Toy Story 5th Birthday": "https://curatedandcutbyel.etsy.com/au/listing/4621750154/pink-toy-story-birthday-invitation",
+  "Little Who Turning Two Birthday": "https://curatedandcutbyel.etsy.com/au/listing/4621711130/little-who-turning-two-birthday",
+  "Pastel Mermaid Birthday": "https://curatedandcutbyel.etsy.com/au/listing/4621693188/mermaid-birthday-invitation-watercolor"
+};
+
+products.forEach(product => {
+  if (newInvitationShareLinks[product.name]) product.url = newInvitationShareLinks[product.name];
+});
+
 /* ==========================================
    GALLERY ELEMENTS
 ========================================== */
