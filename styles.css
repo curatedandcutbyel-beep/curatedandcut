@@ -204,3 +204,20 @@ frame{background:#fff;padding:13px;box-shadow:0 20px 60px #51433c25}.hero-photo{
 @media(max-width:390px) {
   .collection-shortcuts { grid-template-columns:1fr; }
 }
+
+/* Consistent softly rounded clickable controls across the site */
+.button,
+.filter,
+.collection-shortcuts a,
+.birthday-shortcuts a,
+.collection-tools input,
+.menu-toggle {
+  border-radius: 12px;
+}
+.button:focus-visible,
+.filter:focus-visible,
+.collection-shortcuts a:focus-visible,
+.birthday-shortcuts a:focus-visible {
+  outline: 2px solid #9f8276;
+  outline-offset: 3px;
+}
