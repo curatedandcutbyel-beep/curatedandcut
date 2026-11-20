@@ -42,15 +42,25 @@
 .birthday-grid .product-etsy-cta{margin-top:4px;}
 .birthday-note{max-width:770px;padding-top:25px;border-top:1px solid var(--line);font-size:13px;}
 .birthday-note h2{font-size:clamp(27px,3vw,39px);}
-.birthday-search {max-width:620px;margin:0 0 25px;}
-.birthday-search label {display:block;font-size:12px;font-weight:600;margin-bottom:12px;}
-.birthday-search-control {display:flex;align-items:center;background:#fff;border:1px solid var(--line);}
+.birthday-browse-row {display:flex;align-items:flex-start;justify-content:space-between;gap:25px;margin-bottom:53px;}
+.birthday-browse-row .birthday-shortcuts {display:flex;flex-wrap:wrap;gap:11px;margin:0;padding-top:8px;flex:1;}
+.birthday-search {width:min(100%,355px);min-width:255px;margin:0;flex-shrink:0;}
+.visually-hidden {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.birthday-search-control {display:flex;align-items:center;background:#fff;border-radius:999px;padding:5px 5px 5px 19px;box-shadow:0 1px 7px rgba(56,52,49,.045);border:1px solid #f3efeb;}
 .birthday-search-control:focus-within {outline:2px solid #b49c91;outline-offset:2px;}
-.birthday-search-control input {min-width:0;flex:1;border:0;outline:0;background:transparent;padding:16px 17px;font:inherit;font-size:14px;color:var(--ink);}
-.birthday-search-control button {background:none;border:0;cursor:pointer;color:var(--muted);padding:14px 16px;font:600 12px 'DM Sans',sans-serif;}
-.birthday-search-control button[hidden] {display:none;}
-.birthday-search-results {min-height:20px;margin:8px 0 0;font-size:12px;}
+.birthday-search-control input {min-width:0;flex:1;border:0;outline:0;background:transparent;padding:11px 0;font:inherit;font-size:14px;color:var(--ink);-webkit-appearance:none;appearance:none;}
+.birthday-search-control input::-webkit-search-cancel-button {display:none;}
+.birthday-search-control input::placeholder {color:#a59f9a;}
+.birthday-search-control button {font-family:'DM Sans',sans-serif;cursor:pointer;}
+.birthday-search-clear {flex-shrink:0;border:0;background:transparent;color:#8c8580;font-size:22px;padding:7px 10px;line-height:1;}
+.birthday-search-clear[hidden] {display:none;}
+.birthday-search-submit {flex-shrink:0;width:48px;height:48px;border:0;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;background:var(--ink);transition:background .2s;}
+.birthday-search-submit:hover {background:#6c5a52;}
+.birthday-search-results {margin:8px 8px 0;font-size:12px;}
+.birthday-search-results:empty {display:none;}
 .birthday-section[hidden],.birthday-grid .product[hidden],.birthday-shortcuts[hidden] {display:none !important;}
+@media(max-width:1150px) {.birthday-browse-row{flex-wrap:wrap;}.birthday-search{width:min(100%,420px);}}
+@media(max-width:760px) {.birthday-browse-row{flex-direction:column-reverse;gap:20px;margin-bottom:40px;}.birthday-search{width:100%;min-width:0;}.birthday-browse-row .birthday-shortcuts{padding-top:0;}}
 @media(max-width:760px){
  .birthday-main{padding:53px 20px 75px;}
  .birthday-section-header{display:block;}
@@ -83,19 +93,24 @@
 <h1>Editable Canva birthday<br><em>invitations.</em></h1>
 <p>Find a birthday invitation that fits your celebration, from creative adult parties and milestone birthdays to playful themes for little ones. Explore our editable Canva invitations and matching party bundles, then visit Etsy to see the full details and purchase.</p>
 </div>
-<div class="birthday-search" role="search" aria-label="Search birthday invitations">
-  <label for="birthday-search-input">Find an invitation</label>
-  <div class="birthday-search-control">
-    <input id="birthday-search-input" type="search" placeholder="Try Toy Story, mermaid, pottery…" autocomplete="off" aria-controls="adult-birthdays kids-birthdays bundles">
-    <button id="birthday-search-clear" type="button" hidden>Clear</button>
-  </div>
-  <p class="birthday-search-results" id="birthday-search-status" role="status" aria-live="polite"></p>
+<div class="birthday-browse-row">
+  <nav class="birthday-shortcuts" aria-label="Browse birthday invitation collections">
+    <a href="#adult-birthdays">Adult birthday invitations ↗</a>
+    <a href="#kids-birthdays">Kids &amp; first birthdays ↗</a>
+    <a href="#bundles">Matching party bundles ↗</a>
+  </nav>
+  <form class="birthday-search" role="search" aria-label="Search birthday invitations">
+    <label class="visually-hidden" for="birthday-search-input">Search birthday invitations by theme</label>
+    <div class="birthday-search-control">
+      <input id="birthday-search-input" type="search" placeholder="Search..." autocomplete="off" aria-controls="adult-birthdays kids-birthdays bundles">
+      <button id="birthday-search-clear" class="birthday-search-clear" type="button" aria-label="Clear search" hidden>×</button>
+      <button class="birthday-search-submit" type="submit" aria-label="Search invitations">
+        <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.8" cy="10.8" r="7"></circle><path d="m16 16 5 5"></path></svg>
+      </button>
+    </div>
+    <p class="birthday-search-results" id="birthday-search-status" role="status" aria-live="polite"></p>
+  </form>
 </div>
-<nav class="birthday-shortcuts" aria-label="Browse birthday invitation collections">
-<a href="#adult-birthdays">Adult birthday invitations ↗</a>
-<a href="#kids-birthdays">Kids &amp; first birthdays ↗</a>
-<a href="#bundles">Matching party bundles ↗</a>
-</nav>
 
 <section class="birthday-section" id="adult-birthdays" aria-labelledby="adult-birthdays-heading">
 <div class="birthday-section-header">
@@ -467,6 +482,12 @@ function filterBirthdayInvitations() {
   birthdayClear.hidden = !query;
   birthdayStatus.textContent = query ? (matches ? matches + ' matching invitation' + (matches === 1 ? '' : 's') : 'No invitations found. Try a different theme.') : '';
 }
+document.querySelector('.birthday-search').addEventListener('submit',event=>{
+  event.preventDefault();
+  filterBirthdayInvitations();
+  const firstVisible = document.querySelector('.birthday-section:not([hidden])');
+  if (birthdaySearch.value.trim() && firstVisible) firstVisible.scrollIntoView({behavior:'smooth',block:'start'});
+});
 birthdaySearch.addEventListener('input',filterBirthdayInvitations);
 birthdayClear.addEventListener('click',()=>{birthdaySearch.value='';filterBirthdayInvitations();birthdaySearch.focus();});
 filterBirthdayInvitations();
