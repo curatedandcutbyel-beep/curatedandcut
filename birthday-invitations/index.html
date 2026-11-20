@@ -42,6 +42,15 @@
 .birthday-grid .product-etsy-cta{margin-top:4px;}
 .birthday-note{max-width:770px;padding-top:25px;border-top:1px solid var(--line);font-size:13px;}
 .birthday-note h2{font-size:clamp(27px,3vw,39px);}
+.birthday-search {max-width:620px;margin:0 0 25px;}
+.birthday-search label {display:block;font-size:12px;font-weight:600;margin-bottom:12px;}
+.birthday-search-control {display:flex;align-items:center;background:#fff;border:1px solid var(--line);}
+.birthday-search-control:focus-within {outline:2px solid #b49c91;outline-offset:2px;}
+.birthday-search-control input {min-width:0;flex:1;border:0;outline:0;background:transparent;padding:16px 17px;font:inherit;font-size:14px;color:var(--ink);}
+.birthday-search-control button {background:none;border:0;cursor:pointer;color:var(--muted);padding:14px 16px;font:600 12px 'DM Sans',sans-serif;}
+.birthday-search-control button[hidden] {display:none;}
+.birthday-search-results {min-height:20px;margin:8px 0 0;font-size:12px;}
+.birthday-section[hidden],.birthday-grid .product[hidden],.birthday-shortcuts[hidden] {display:none !important;}
 @media(max-width:760px){
  .birthday-main{padding:53px 20px 75px;}
  .birthday-section-header{display:block;}
@@ -73,6 +82,14 @@
 <div class="eyebrow">THE BIRTHDAY INVITATION EDIT</div>
 <h1>Editable Canva birthday<br><em>invitations.</em></h1>
 <p>Find a birthday invitation that fits your celebration, from creative adult parties and milestone birthdays to playful themes for little ones. Explore our editable Canva invitations and matching party bundles, then visit Etsy to see the full details and purchase.</p>
+</div>
+<div class="birthday-search" role="search" aria-label="Search birthday invitations">
+  <label for="birthday-search-input">Find an invitation</label>
+  <div class="birthday-search-control">
+    <input id="birthday-search-input" type="search" placeholder="Try Toy Story, mermaid, pottery…" autocomplete="off" aria-controls="adult-birthdays kids-birthdays bundles">
+    <button id="birthday-search-clear" type="button" hidden>Clear</button>
+  </div>
+  <p class="birthday-search-results" id="birthday-search-status" role="status" aria-live="polite"></p>
 </div>
 <nav class="birthday-shortcuts" aria-label="Browse birthday invitation collections">
 <a href="#adult-birthdays">Adult birthday invitations ↗</a>
@@ -427,6 +444,34 @@
 </footer>
 <script>
 document.getElementById('year').textContent=new Date().getFullYear();
+const birthdaySearch = document.getElementById('birthday-search-input');
+const birthdayClear = document.getElementById('birthday-search-clear');
+const birthdayStatus = document.getElementById('birthday-search-status');
+const birthdaySections = Array.from(document.querySelectorAll('.birthday-section'));
+const birthdayShortcuts = document.querySelector('.birthday-shortcuts');
+const birthdayCards = Array.from(document.querySelectorAll('.birthday-grid .product'));
+function filterBirthdayInvitations() {
+  const query = birthdaySearch.value.trim().toLocaleLowerCase();
+  let matches = 0;
+  birthdayCards.forEach(card => {
+    const name = card.querySelector('[data-invitation-name]')?.dataset.invitationName || '';
+    const description = card.querySelector('.product-details p')?.textContent || '';
+    const visible = !query || (name + ' ' + description).toLocaleLowerCase().includes(query);
+    card.hidden = !visible;
+    if (visible) matches++;
+  });
+  birthdaySections.forEach(section => {
+    section.hidden = !!query && !Array.from(section.querySelectorAll('.product')).some(card => !card.hidden);
+  });
+  birthdayShortcuts.hidden = !!query;
+  birthdayClear.hidden = !query;
+  birthdayStatus.textContent = query ? (matches ? matches + ' matching invitation' + (matches === 1 ? '' : 's') : 'No invitations found. Try a different theme.') : '';
+}
+birthdaySearch.addEventListener('input',filterBirthdayInvitations);
+birthdayClear.addEventListener('click',()=>{birthdaySearch.value='';filterBirthdayInvitations();birthdaySearch.focus();});
+filterBirthdayInvitations();
+
+
 document.querySelectorAll('[data-invitation-name]').forEach(link=>link.addEventListener('click',()=>{
 if(typeof window.gtag==='function')window.gtag('event','select_invitation',{
 invitation_name:link.dataset.invitationName,invitation_category:link.dataset.category,
