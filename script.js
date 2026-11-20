@@ -12,57 +12,57 @@ const shop = "https://www.etsy.com/shop/curatedandcutbyel";
 ========================================== */
 
 const etsyListingIds = {
-  "Bouquet Bar": "4602045139",
-  "The Charm Club": "4612924489",
-  "Toy Story Cowgirl Jessie Birthday": "4577651944",
-  "Talk Thirty to Me": "4612922390",
-  "Jellycat Cake": "4594450600",
-  "Masquerade": "4601364495",
-  "Matcha Club": "4604215120",
-  "Mermaid Birthday": "4592401978",
-  "Pasta Club": "4605330954",
-  "Peppa Pig Birthday": "4590185990",
-  "Peppa Pig Rainbow": "4583984895",
-  "Pink Carnival": "4544349707",
-  "Scorpio Season — Pink": "4605351443",
-  "Pink Mandala Birthday": "4596347796",
-  "The Pottery Club": "4612922925",
-  "Retro Palm Tree": "4595943791",
-  "Sagittarius Season": "4605362167",
-  "Six Seven": "4596382362",
-  "Sourdough Celebrations": "4604598712",
-  "Toy Story Birthday": "4585499376",
-  "Trading Card Birthday": "4606080182",
-  "Two Let the Dogs Out": "4592947935",
-  "Under the Sea": "4543693794",
+  "Bouquet Making Birthday Invitation": "4602045139",
+  "Charm Bracelet Making Birthday Invitation": "4612924489",
+  "Toy Story Cowgirl Jessie Birthday Invitation": "4577651944",
+  "Talk Thirty to Me 30th Birthday Invitation": "4612922390",
+  "Jellycat Cake Birthday Invitation": "4594450600",
+  "Masquerade Birthday Invitation": "4601364495",
+  "Matcha Club Birthday Invitation": "4604215120",
+  "Mermaid Birthday Invitation": "4592401978",
+  "Pasta Club Birthday Invitation": "4605330954",
+  "Peppa Pig Birthday Invitation": "4590185990",
+  "Rainbow Peppa Pig Birthday Invitation": "4583984895",
+  "Pink Carnival Ticket Birthday Invitation": "4544349707",
+  "Pink Scorpio Season Birthday Invitation": "4605351443",
+  "Pink Mandala Birthday Invitation": "4596347796",
+  "Pottery Painting Birthday Invitation": "4612922925",
+  "Retro Palm Tree Birthday Invitation": "4595943791",
+  "Sagittarius Season Birthday Invitation": "4605362167",
+  "Six Seven Birthday Invitation": "4596382362",
+  "Sourdough Birthday Invitation": "4604598712",
+  "Classic Toy Story Birthday Invitation": "4585499376",
+  "Trading Card Birthday Invitation": "4606080182",
+  "Two Let the Dogs Out 2nd Birthday Invitation": "4592947935",
+  "One-der the Sea First Birthday Invitation": "4543693794",
 
-  "Ballerina Birthday": "4544262582",
-  "Scorpio Season — Black & Gold": "4605356439",
-  "Blue Teddy Bear Picnic": "4543023406",
-  "Burgundy & Blush 18th": "4551009860",
-  "Cocktail Party": "4551035091",
-  "Dinosaur Dig": "4586893968",
-  "Enchanted Fairy Garden": "4586916121",
-  "Groovy Seventh Birthday": "4573111003",
-  "K-Pop Birthday Party": "4586133139",
-  "Martini Birthday": "4540630626",
-  "Pink Cowgirl Rodeo": "4573760144",
-  "Pink Princess Birthday": "4565265756",
-  "Pink Teddy Bear Picnic": "4544205193",
-  "Pool Party": "4582170402",
-  "Race Car Birthday": "4587019737",
-  "Sonic Birthday": "4569508761",
-  "Spa Party": "4582133900",
-  "Strawberry First Birthday": "4592393628",
-  "Swan Princess": "4547814969",
-  "Two the Moon": "4547817571",
-  "Vintage Circus": "4549387792",
-  "Wine Tasting Birthday": "4584255804",
-  "Winnie the Pooh First Birthday": "4590192097",
-  "Pink Toy Story Birthday": "4621750154",
-  "Little Who Turning Two Birthday": "4621711130",
-  "Pastel Mermaid Birthday": "4621693188",
-  "Pink Toy Story Jessie Birthday Invitation": "4567772359",
+  "Ballerina Birthday Invitation": "4544262582",
+  "Black & Gold Scorpio Birthday Invitation": "4605356439",
+  "Blue Teddy Bear Picnic Birthday Invitation": "4543023406",
+  "Burgundy & Blush 18th Birthday Invitation": "4551009860",
+  "Cocktail Party Birthday Invitation": "4551035091",
+  "Dinosaur Dig Birthday Invitation Bundle": "4586893968",
+  "Enchanted Fairy Garden Birthday Invitation Bundle": "4586916121",
+  "Groovy 7th Birthday Invitation": "4573111003",
+  "K-Pop Birthday Invitation": "4586133139",
+  "Martini Birthday Invitation": "4540630626",
+  "Pink Cowgirl Rodeo Birthday Invitation": "4573760144",
+  "Pink Princess Birthday Invitation": "4565265756",
+  "Pink Teddy Bear Picnic Birthday Invitation": "4544205193",
+  "Pool Party Birthday Invitation": "4582170402",
+  "Vintage Race Car Birthday Invitation Bundle": "4587019737",
+  "Sonic Birthday Invitation": "4569508761",
+  "Pink Spa Party Birthday Invitation": "4582133900",
+  "Strawberry First Birthday Invitation": "4592393628",
+  "Swan Princess Birthday Invitation": "4547814969",
+  "Two the Moon 2nd Birthday Invitation": "4547817571",
+  "Vintage Circus Birthday Invitation": "4549387792",
+  "Wine Tasting Birthday Invitation Bundle": "4584255804",
+  "Winnie the Pooh First Birthday Invitation": "4590192097",
+  "Pink Toy Story Birthday Invitation": "4621750154",
+  "Little Who Turning Two Birthday Invitation": "4621711130",
+  "Pastel Mermaid Birthday Invitation": "4621693188",
+  "Pink Toy Story Jessie & Bullseye Birthday Invitation": "4567772359",
   "Blue Toy Story Birthday Invitation": "4566539935"
 };
 
@@ -75,139 +75,139 @@ const products = [
   // ORIGINAL INVITATIONS
 
   {
-    name: "Bouquet Bar",
+    name: "Bouquet Making Birthday Invitation",
     sub: "Editable flower arranging birthday invite for a stylish bouquet-making celebration.",
     category: "adult",
     image: "bouquet-bar-birthday-invitation.png"
   },
   {
-    name: "The Charm Club",
+    name: "Charm Bracelet Making Birthday Invitation",
     sub: "Charm bracelet making birthday invite for a creative jewellery party.",
     category: "kids",
     image: "charm-bracelet-birthday-invitation.png"
   },
   {
-    name: "Toy Story Cowgirl Jessie Birthday",
+    name: "Toy Story Cowgirl Jessie Birthday Invitation",
     sub: "Toy Story Jessie-inspired cowgirl birthday invitation for a playful western-themed party.",
     category: "kids",
     image: "cowgirl-jessie-birthday-invitation.png"
   },
   {
-    name: "Talk Thirty to Me",
+    name: "Talk Thirty to Me 30th Birthday Invitation",
     sub: "Martini-inspired 30th birthday invite for a chic milestone celebration.",
     category: "adult",
     image: "dirty-thirty-martini-birthday-invitation.png"
   },
   {
-    name: "Jellycat Cake",
+    name: "Jellycat Cake Birthday Invitation",
     sub: "Cute cake-themed birthday invite for a playful kids celebration.",
     category: "kids",
     image: "jellycat-cake-birthday-invitation.png"
   },
   {
-    name: "Masquerade",
+    name: "Masquerade Birthday Invitation",
     sub: "Elegant masquerade birthday invite for a glamorous masked party.",
     category: "adult",
     image: "masquerade-birthday-party-invitation.png"
   },
   {
-    name: "Matcha Club",
+    name: "Matcha Club Birthday Invitation",
     sub: "Modern matcha-themed birthday invite for a cute café-style celebration.",
     category: "adult",
     image: "matcha-club-birthday-invitation.png"
   },
   {
-    name: "Mermaid Birthday",
+    name: "Mermaid Birthday Invitation",
     sub: "Whimsical mermaid birthday invite for an under-the-sea kids party.",
     category: "kids",
     image: "mermaid-birthday-invitation.png"
   },
   {
-    name: "Pasta Club",
+    name: "Pasta Club Birthday Invitation",
     sub: "Italian pasta-themed birthday invite for a fun dinner celebration.",
     category: "adult",
     image: "pasta-club-birthday-invitation.png"
   },
   {
-    name: "Peppa Pig Birthday",
+    name: "Peppa Pig Birthday Invitation",
     sub: "Colourful Peppa Pig birthday invite for a cheerful kids party.",
     category: "kids",
     image: "peppa-pig-birthday-invitation.png"
   },
   {
-    name: "Peppa Pig Rainbow",
+    name: "Rainbow Peppa Pig Birthday Invitation",
     sub: "Rainbow Peppa Pig birthday invite for a bright, playful celebration.",
     category: "kids",
     image: "peppa-pig-rainbow-birthday-invitation.png"
   },
   {
-    name: "Pink Carnival",
+    name: "Pink Carnival Ticket Birthday Invitation",
     sub: "Pink carnival ticket birthday invite for a fun fairground-themed party.",
     category: "kids",
     image: "pink-carnival-ticket-birthday-invitation.png"
   },
   {
-    name: "Scorpio Season — Pink",
+    name: "Pink Scorpio Season Birthday Invitation",
     sub: "Pink Scorpio zodiac birthday invite for a star-sign celebration.",
     category: "adult",
     image: "pink-scorpio-birthday-invitation.png"
   },
   {
-    name: "Pink Mandala Birthday",
+    name: "Pink Mandala Birthday Invitation",
     sub: "Pink mandala birthday invitation with an elegant tile-inspired design for any age.",
     category: "kids",
     image: "pink-tile-12th-birthday-invitation.png"
   },
   {
-    name: "The Pottery Club",
+    name: "Pottery Painting Birthday Invitation",
     sub: "Pottery painting birthday invite for a creative paint-and-sip celebration.",
     category: "adult",
     image: "pottery-painting-birthday-invitation.png"
   },
   {
-    name: "Retro Palm Tree",
+    name: "Retro Palm Tree Birthday Invitation",
     sub: "Retro palm tree birthday invite for a laid-back summer celebration.",
     category: "adult",
     image: "retro-palm-tree-birthday-invitation.png"
   },
   {
-    name: "Sagittarius Season",
+    name: "Sagittarius Season Birthday Invitation",
     sub: "Sagittarius zodiac birthday invite for a celestial birthday celebration.",
     category: "adult",
     image: "sagittarius-season-birthday-invitation.png"
   },
   {
-    name: "Six Seven",
+    name: "Six Seven Birthday Invitation",
     sub: "Playful six-seven birthday invite for a trend-inspired kids party.",
     category: "kids",
     image: "six-seven-birthday-invitation.png"
   },
   {
-    name: "Sourdough Celebrations",
+    name: "Sourdough Birthday Invitation",
     sub: "Sourdough-themed birthday invite for a cosy baking-inspired celebration.",
     category: "adult",
     image: "sourdough-birthday-invitation.png"
   },
   {
-    name: "Toy Story Birthday",
+    name: "Classic Toy Story Birthday Invitation",
     sub: "Toy Story birthday invite for a playful, adventure-filled kids party.",
     category: "kids",
     image: "toy-story-birthday-invitation.png"
   },
   {
-    name: "Trading Card Birthday",
+    name: "Trading Card Birthday Invitation",
     sub: "Trading card-inspired birthday invite for a fun collector-themed party.",
     category: "kids",
     image: "trading-card-birthday-invitation.png"
   },
   {
-    name: "Two Let the Dogs Out",
+    name: "Two Let the Dogs Out 2nd Birthday Invitation",
     sub: "Dog-themed 2nd birthday invite for a playful puppy party.",
     category: "kids",
     image: "two-let-the-dogs-out-birthday-invitation.png"
   },
   {
-    name: "Under the Sea",
+    name: "One-der the Sea First Birthday Invitation",
     sub: "Under-the-sea first birthday invite for a sweet ocean-themed celebration.",
     category: "kids",
     image: "under-the-sea-first-birthday-invitation.png"
@@ -216,163 +216,163 @@ const products = [
   // NEW INVITATIONS
 
   {
-    name: "Ballerina Birthday",
+    name: "Ballerina Birthday Invitation",
     sub: "Ballerina birthday invite for a sweet, ballet-inspired kids party.",
     category: "kids",
     image: "ballerina-birthday-invitation.png"
   },
   {
-    name: "Scorpio Season — Black & Gold",
+    name: "Black & Gold Scorpio Birthday Invitation",
     sub: "Black and gold Scorpio birthday invite for a bold zodiac celebration.",
     category: "adult",
     image: "black-gold-scorpio-birthday-invitation.png"
   },
   {
-    name: "Blue Teddy Bear Picnic",
+    name: "Blue Teddy Bear Picnic Birthday Invitation",
     sub: "Blue teddy bear picnic birthday invite for a sweet little-one celebration.",
     category: "kids",
     image: "blue-teddy-bear-picnic-birthday-invitation.png"
   },
   {
-    name: "Burgundy & Blush 18th",
+    name: "Burgundy & Blush 18th Birthday Invitation",
     sub: "Burgundy and blush 18th birthday invite for an elegant milestone party.",
     category: "adult",
     image: "burgundy-blush-18th-birthday-invitation.png"
   },
   {
-    name: "Cocktail Party",
+    name: "Cocktail Party Birthday Invitation",
     sub: "Stylish cocktail birthday invite for a drinks-and-celebration evening.",
     category: "adult",
     image: "cocktail-party-birthday-invitation.png"
   },
   {
-    name: "Dinosaur Dig",
+    name: "Dinosaur Dig Birthday Invitation Bundle",
     sub: "Dinosaur dig birthday bundle with matching invitation and thank-you tag.",
     category: "kids",
     image: "dinosaur-dig-birthday-invitation-party-favors.png"
   },
   {
-    name: "Enchanted Fairy Garden",
+    name: "Enchanted Fairy Garden Birthday Invitation Bundle",
     sub: "Fairy garden birthday bundle with matching invitation and thank-you tag.",
     category: "kids",
     image: "fairy-garden-birthday-invitation-party-favors.png"
   },
   {
-    name: "Groovy Seventh Birthday",
+    name: "Groovy 7th Birthday Invitation",
     sub: "Retro groovy 7th birthday invite for a colourful kids celebration.",
     category: "kids",
     image: "groovy-seventh-birthday-invitation.png"
   },
   {
-    name: "K-Pop Birthday Party",
+    name: "K-Pop Birthday Invitation",
     sub: "K-pop birthday invite for a music-loving kids party.",
     category: "kids",
     image: "kpop-birthday-party-invitation.png"
   },
   {
-    name: "Martini Birthday",
+    name: "Martini Birthday Invitation",
     sub: "Chic martini birthday invite for a stylish cocktail-themed celebration.",
     category: "adult",
     image: "martini-birthday-invitation.png"
   },
   {
-    name: "Pink Cowgirl Rodeo",
+    name: "Pink Cowgirl Rodeo Birthday Invitation",
     sub: "Pink cowgirl rodeo birthday invite for a western-inspired kids party.",
     category: "kids",
     image: "pink-cowgirl-rodeo-birthday-invitation.png"
   },
   {
-    name: "Pink Princess Birthday",
+    name: "Pink Princess Birthday Invitation",
     sub: "Pink princess birthday invite for a magical royal-themed celebration.",
     category: "kids",
     image: "pink-princess-birthday-invitation.png"
   },
   {
-    name: "Pink Teddy Bear Picnic",
+    name: "Pink Teddy Bear Picnic Birthday Invitation",
     sub: "Pink teddy bear picnic birthday invite for a sweet kids celebration.",
     category: "kids",
     image: "pink-teddy-bear-picnic-birthday-invitation.png"
   },
   {
-    name: "Pool Party",
+    name: "Pool Party Birthday Invitation",
     sub: "Summer pool party birthday invite for a splash-filled celebration.",
     category: "kids",
     image: "pool-party-birthday-invitation.png"
   },
   {
-    name: "Race Car Birthday",
+    name: "Vintage Race Car Birthday Invitation Bundle",
     sub: "Vintage race car birthday bundle with matching invitation and thank-you tag.",
     category: "kids",
     image: "race-car-birthday-invitation-party-favors.png"
   },
   {
-    name: "Sonic Birthday",
+    name: "Sonic Birthday Invitation",
     sub: "Sonic-inspired birthday invite for a speedy, action-packed kids party.",
     category: "kids",
     image: "sonic-birthday-invitation.png"
   },
   {
-    name: "Spa Party",
+    name: "Pink Spa Party Birthday Invitation",
     sub: "Pink spa birthday invite for a pamper-party celebration.",
     category: "kids",
     image: "spa-party-birthday-invitation.png"
   },
   {
-    name: "Strawberry First Birthday",
+    name: "Strawberry First Birthday Invitation",
     sub: "Sweet strawberry first birthday invite for a berry-themed celebration.",
     category: "kids",
     image: "strawberry-first-birthday-invitation.png"
   },
   {
-    name: "Swan Princess",
+    name: "Swan Princess Birthday Invitation",
     sub: "Elegant swan princess birthday invite for a graceful, fairytale-inspired party.",
     category: "kids",
     image: "swan-princess-birthday-invitation.png"
   },
   {
-    name: "Two the Moon",
+    name: "Two the Moon 2nd Birthday Invitation",
     sub: "Space-themed 2nd birthday invite for a little astronaut celebration.",
     category: "kids",
     image: "two-the-moon-birthday-invitation.png"
   },
   {
-    name: "Vintage Circus",
+    name: "Vintage Circus Birthday Invitation",
     sub: "Vintage circus birthday invite for a nostalgic carnival-inspired party.",
     category: "kids",
     image: "vintage-circus-birthday-invitation.png"
   },
   {
-    name: "Wine Tasting Birthday",
+    name: "Wine Tasting Birthday Invitation Bundle",
     sub: "Wine tasting birthday bundle with matching invitation and wine tasting scorecard.",
     category: "adult",
     image: "wine-tasting-birthday-invitation.png"
   },
   {
-    name: "Winnie the Pooh First Birthday",
+    name: "Winnie the Pooh First Birthday Invitation",
     sub: "Winnie the Pooh first birthday invite for a sweet storybook celebration.",
     category: "kids",
     image: "winnie-the-pooh-first-birthday-invitation.png"
   },
   {
-    name: "Pink Toy Story Birthday",
+    name: "Pink Toy Story Birthday Invitation",
     sub: "Pink western Toy Story-inspired birthday invitation featuring cowgirl and cowboy characters for any age.",
     category: "kids",
     image: "pink-toy-story-5th-birthday-invitation.png"
   },
   {
-    name: "Little Who Turning Two Birthday",
+    name: "Little Who Turning Two Birthday Invitation",
     sub: "Pink Grinchmas-inspired second birthday invitation for a festive Little Who celebration.",
     category: "kids",
     image: "pink-grinchmas-2nd-birthday-invitation.png"
   },
   {
-    name: "Pastel Mermaid Birthday",
+    name: "Pastel Mermaid Birthday Invitation",
     sub: "Pastel watercolour mermaid birthday invitation with pink, lilac and under-the-sea details.",
     category: "kids",
     image: "pastel-mermaid-birthday-invitation.png"
   },
   {
-    name: "Pink Toy Story Jessie Birthday Invitation",
+    name: "Pink Toy Story Jessie & Bullseye Birthday Invitation",
     sub: "Pink Toy Story birthday invitation featuring Jessie and Bullseye, with a cowgirl party theme and editable Canva template.",
     category: "kids",
     image: "pink-jessie-bullseye-birthday-invitation.png"
@@ -391,10 +391,10 @@ const products = [
 ========================================== */
 
 const bundleNames = [
-  "Wine Tasting Birthday",
-  "Race Car Birthday",
-  "Dinosaur Dig",
-  "Enchanted Fairy Garden"
+  "Wine Tasting Birthday Invitation Bundle",
+  "Vintage Race Car Birthday Invitation Bundle",
+  "Dinosaur Dig Birthday Invitation Bundle",
+  "Enchanted Fairy Garden Birthday Invitation Bundle"
 ];
 
 products.forEach(product => {
@@ -415,9 +415,9 @@ products.forEach(product => {
 
 // Preserve the shop's direct save-and-share links for the new listings.
 const newInvitationShareLinks = {
-  "Pink Toy Story Birthday": "https://curatedandcutbyel.etsy.com/au/listing/4621750154/pink-toy-story-birthday-invitation",
-  "Little Who Turning Two Birthday": "https://curatedandcutbyel.etsy.com/au/listing/4621711130/little-who-turning-two-birthday",
-  "Pastel Mermaid Birthday": "https://curatedandcutbyel.etsy.com/au/listing/4621693188/mermaid-birthday-invitation-watercolor"
+  "Pink Toy Story Birthday Invitation": "https://curatedandcutbyel.etsy.com/au/listing/4621750154/pink-toy-story-birthday-invitation",
+  "Little Who Turning Two Birthday Invitation": "https://curatedandcutbyel.etsy.com/au/listing/4621711130/little-who-turning-two-birthday",
+  "Pastel Mermaid Birthday Invitation": "https://curatedandcutbyel.etsy.com/au/listing/4621693188/mermaid-birthday-invitation-watercolor"
 };
 
 products.forEach(product => {
@@ -426,7 +426,7 @@ products.forEach(product => {
 
 // Use direct Etsy share URLs for these new birthday invitations.
 const additionalInvitationShareLinks = {
-  "Pink Toy Story Jessie Birthday Invitation": "https://curatedandcutbyel.etsy.com/au/listing/4567772359/toy-story-birthday-invitation-pink",
+  "Pink Toy Story Jessie & Bullseye Birthday Invitation": "https://curatedandcutbyel.etsy.com/au/listing/4567772359/toy-story-birthday-invitation-pink",
   "Blue Toy Story Birthday Invitation": "https://curatedandcutbyel.etsy.com/au/listing/4566539935/toy-story-3rd-birthday-invitation"
 };
 products.forEach(product => {
@@ -437,7 +437,7 @@ products.forEach(product => {
 
 // Correct direct share link for the One-der the Sea invitation.
 products.forEach(product => {
-  if (product.name === "Under the Sea") product.url = "https://curatedandcutbyel.etsy.com/au/listing/4543693794/one-der-the-sea-birthday-invitation";
+  if (product.name === "One-der the Sea First Birthday Invitation") product.url = "https://curatedandcutbyel.etsy.com/au/listing/4543693794/one-der-the-sea-birthday-invitation";
 });
 
 /* ==========================================
