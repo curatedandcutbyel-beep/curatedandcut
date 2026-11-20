@@ -2,7 +2,7 @@
 /* ==========================================
    CURATED & CUT BY EL
    COMPLETE WEBSITE SCRIPT
-   46 INVITATIONS
+   49 INVITATIONS
 ========================================== */
 
 const shop = "https://www.etsy.com/shop/curatedandcutbyel";
@@ -58,7 +58,10 @@ const etsyListingIds = {
   "Two the Moon": "4547817571",
   "Vintage Circus": "4549387792",
   "Wine Tasting Birthday": "4584255804",
-  "Winnie the Pooh First Birthday": "4590192097"
+  "Winnie the Pooh First Birthday": "4590192097",
+  "Pink Toy Story 5th Birthday": "4621750154",
+  "Little Who Turning Two Birthday": "4621711130",
+  "Pastel Mermaid Birthday": "4621693188"
 };
 
 /* ==========================================
@@ -347,6 +350,24 @@ const products = [
     sub: "Winnie the Pooh first birthday invite for a sweet storybook celebration.",
     category: "kids",
     image: "winnie-the-pooh-first-birthday-invitation.png"
+  },
+  {
+    name: "Pink Toy Story 5th Birthday",
+    sub: "Pink western Toy Story-inspired fifth birthday invitation featuring cowgirl and cowboy characters.",
+    category: "kids",
+    image: "pink-toy-story-5th-birthday-invitation.png"
+  },
+  {
+    name: "Little Who Turning Two Birthday",
+    sub: "Pink Grinchmas-inspired second birthday invitation for a festive Little Who celebration.",
+    category: "kids",
+    image: "pink-grinchmas-2nd-birthday-invitation.png"
+  },
+  {
+    name: "Pastel Mermaid Birthday",
+    sub: "Pastel watercolour mermaid birthday invitation with pink, lilac and under-the-sea details.",
+    category: "kids",
+    image: "pastel-mermaid-birthday-invitation.png"
   }
 
 ];
