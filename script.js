@@ -2,7 +2,7 @@
 /* ==========================================
    CURATED & CUT BY EL
    COMPLETE WEBSITE SCRIPT
-   49 INVITATIONS
+   51 INVITATIONS
 ========================================== */
 
 const shop = "https://www.etsy.com/shop/curatedandcutbyel";
@@ -61,7 +61,9 @@ const etsyListingIds = {
   "Winnie the Pooh First Birthday": "4590192097",
   "Pink Toy Story Birthday": "4621750154",
   "Little Who Turning Two Birthday": "4621711130",
-  "Pastel Mermaid Birthday": "4621693188"
+  "Pastel Mermaid Birthday": "4621693188",
+  "Pink Toy Story Jessie Birthday Invitation": "4567772359",
+  "Blue Toy Story Birthday Invitation": "4566539935"
 };
 
 /* ==========================================
@@ -368,6 +370,18 @@ const products = [
     sub: "Pastel watercolour mermaid birthday invitation with pink, lilac and under-the-sea details.",
     category: "kids",
     image: "pastel-mermaid-birthday-invitation.png"
+  },
+  {
+    name: "Pink Toy Story Jessie Birthday Invitation",
+    sub: "Pink Toy Story birthday invitation featuring Jessie and Bullseye, with a cowgirl party theme and editable Canva template.",
+    category: "kids",
+    image: "pink-jessie-bullseye-birthday-invitation.png"
+  },
+  {
+    name: "Blue Toy Story Birthday Invitation",
+    sub: "Blue Toy Story birthday invitation for a boys' party, supplied as an editable Canva digital template.",
+    category: "kids",
+    image: "blue-boys-toystory-birthday-invitation.png"
   }
 
 ];
@@ -408,6 +422,17 @@ const newInvitationShareLinks = {
 
 products.forEach(product => {
   if (newInvitationShareLinks[product.name]) product.url = newInvitationShareLinks[product.name];
+});
+
+// Use direct Etsy share URLs for these new birthday invitations.
+const additionalInvitationShareLinks = {
+  "Pink Toy Story Jessie Birthday Invitation": "https://curatedandcutbyel.etsy.com/au/listing/4567772359/toy-story-birthday-invitation-pink",
+  "Blue Toy Story Birthday Invitation": "https://curatedandcutbyel.etsy.com/au/listing/4566539935/toy-story-3rd-birthday-invitation"
+};
+products.forEach(product => {
+  if (additionalInvitationShareLinks[product.name]) {
+    product.url = additionalInvitationShareLinks[product.name];
+  }
 });
 
 /* ==========================================
