@@ -689,6 +689,13 @@ const partyGamesProducts = [
     image: "pink-birthday-pub-golf-printable-game-bundle.png",
     url: "https://curatedandcutbyel.etsy.com/au/listing/4598445179/pub-golf-scorecard-party-kit-editable",
     listingId: "4598445179"
+  },
+  {
+    name: "Toy Story Printable Birthday Party Hats",
+    sub: "Printable cowboy and cowgirl birthday party hats in three gingham colours. PDF digital download.",
+    image: "toy-story-printable-birthday-party-hats.png",
+    url: "https://curatedandcutbyel.etsy.com/au/listing/4622909773/toy-story-printable-party-hats-cowboy",
+    listingId: "4622909773"
   }
 ];
 
