@@ -658,8 +658,8 @@ if (toggle && nav) {
 document.querySelectorAll(".collection-shortcuts a[data-collection]").forEach(link => {
   link.addEventListener("click", () => {
     const collection = link.dataset.collection;
-    if (collection === "birthdays" || collection === "bundles") {
-      const filter = collection === "bundles" ? "bundles" : "all";
+    if (collection === "birthdays") {
+      const filter = "all";
       document.querySelector(`.filter[data-filter="${filter}"]`)?.click();
     }
   });
