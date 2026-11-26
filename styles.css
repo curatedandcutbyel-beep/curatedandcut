@@ -228,7 +228,7 @@ frame{background:#fff;padding:13px;box-shadow:0 20px 60px #51433c25}.hero-photo{
 .bundle-offer{display:grid;grid-template-columns:minmax(220px,.75fr) minmax(0,1.25fr);gap:clamp(28px,5vw,80px);align-items:center;max-width:1160px;margin:0 auto;padding:32px 0 18px;border-top:1px solid var(--line)}
 .bundle-offer+.bundle-offer{margin-top:45px}
 .bundle-offer-image{background:#f3ebe5;max-width:380px}
-.bundle-offer-image img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.bundle-offer-image img{display:block;width:100%;height:auto;object-fit:contain}
 .bundle-offer-kicker{font:600 11px/1.6 'DM Sans',sans-serif;letter-spacing:.13em;color:#9b786e}
 .bundle-offer h3{font:400 clamp(30px,3.8vw,53px)/1.2 'Playfair Display',Georgia,serif;letter-spacing:-.04em;margin:15px 0 16px}
 .bundle-offer h3 em{color:#a58b82}
@@ -243,3 +243,8 @@ frame{background:#fff;padding:13px;box-shadow:0 20px 60px #51433c25}.hero-photo{
 /* Cross-sell link beneath participating individual product cards */
 .product-bundle-note{display:inline-block;margin:10px 0 4px;color:#8c675e;font:600 12px/1.5 'DM Sans',sans-serif;text-decoration:underline;text-underline-offset:4px;}
 .product-bundle-note:hover{color:var(--ink);}
+
+.bundle-offer-image{display:block;overflow:hidden;border-radius:12px;transition:box-shadow .2s;}
+.bundle-offer-image:hover{box-shadow:0 10px 28px rgba(64,45,35,.12);}
+.bundle-offer-image:focus-visible{outline:2px solid #9f8276;outline-offset:3px;}
+.bundle-offer-content>p strong,.bundle-offer-note strong{font-weight:600;color:var(--ink);}
