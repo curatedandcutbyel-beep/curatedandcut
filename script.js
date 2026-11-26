@@ -573,6 +573,13 @@ function render() {
 
     link.append(imageBox, details);
     article.append(link);
+    if (etsyListingIds[product.name] === "4592947935") {
+      const bundleLink = document.createElement("a");
+      bundleLink.href = "/#bundle-save";
+      bundleLink.className = "product-bundle-note";
+      bundleLink.textContent = "Matching party set · Buy all 3 & save 30% ↗";
+      article.append(bundleLink);
+    }
     grid.append(article);
 
   });
