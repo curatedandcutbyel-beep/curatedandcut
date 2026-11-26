@@ -221,3 +221,21 @@ frame{background:#fff;padding:13px;box-shadow:0 20px 60px #51433c25}.hero-photo{
   outline: 2px solid #9f8276;
   outline-offset: 3px;
 }
+
+/* Reusable matching-product offers. Add another .bundle-offer for future collections. */
+.bundle-save-section{border-top:1px solid var(--line);scroll-margin-top:30px}
+.bundle-save-section .section-heading p{max-width:380px}
+.bundle-offer{display:grid;grid-template-columns:minmax(220px,.75fr) minmax(0,1.25fr);gap:clamp(28px,5vw,80px);align-items:center;max-width:1160px;margin:0 auto;padding:32px 0 18px;border-top:1px solid var(--line)}
+.bundle-offer+.bundle-offer{margin-top:45px}
+.bundle-offer-image{background:#f3ebe5;max-width:380px}
+.bundle-offer-image img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.bundle-offer-kicker{font:600 11px/1.6 'DM Sans',sans-serif;letter-spacing:.13em;color:#9b786e}
+.bundle-offer h3{font:400 clamp(30px,3.8vw,53px)/1.2 'Playfair Display',Georgia,serif;letter-spacing:-.04em;margin:15px 0 16px}
+.bundle-offer h3 em{color:#a58b82}
+.bundle-offer-content>p{font-size:14px;line-height:1.8;max-width:580px}
+.bundle-offer-products{display:grid;gap:10px;margin:24px 0}
+.bundle-offer-products a{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:15px 18px;border:1px solid var(--line);border-radius:12px;background:#fffdfa;font-size:13px;transition:background .2s}
+.bundle-offer-products a:hover{background:#f0e8e2}
+.bundle-offer-products a span{color:#a58b82}
+.bundle-offer .bundle-offer-note{font-size:12px;color:var(--muted);line-height:1.65}
+@media(max-width:760px){.bundle-offer{grid-template-columns:1fr;gap:22px}.bundle-offer-image{max-width:420px}.bundle-offer h3{font-size:clamp(32px,8vw,44px)}}
